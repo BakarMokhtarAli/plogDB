@@ -2,11 +2,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const dbURL = process.env.DATABASE.replace(
-  "<PASSWORD>",
-  process.env.PASSWORD
-);
-
+// export const dbURL = process.env.DATABASE.replace(
+//   "<PASSWORD>",
+//   process.env.PASSWORD
+// );
+export const dbURL = process.env.DATABASE;
 export const port = 3000;
 export const jwtSecret = process.env.JWT_SECRET_KEY;
 export const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET;
